@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul class="navigation">
+            <div class="logo-head">
+            <h1 class="logo">TAYYAB KHAN</h1>
+            </div>
+               <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+            <div class="link-outer" id="nav-links">
+            <li class="nav-links"><a href="#HOME">Home</a></li>
+            <li class="nav-links"><a href="#ABOUT">About</a></li>
+            <li class="nav-links"><a href="#CONTACT">Contact</a></li>
+            <!-- <li class="nav-links"><a href="index.html">Service</a></li> -->
+            </div>
+        </ul>
+    </header>
+    <div class="hero-banner" ID="HOME">
+        <div class="left-side">
+            <div class="icons">
+                <a href="YOUR_FACEBOOK_URL"><i class="fa fa-facebook"></i></a>
+                <a href="YOUR_INSTAGRAM_URL"><i class="fa fa-instagram"></i></a>
+                <a href="YOUR_LINKEDIN_URL"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+            <div class="hero-content">
+                <h1>
+                    I'm <span style="color: #00ADB5; font-weight: 800;"> MUHAMMAD TAYYAB KHAN </span>
+                </h1>
+                <h2>Front-end Developer</h2>
+                <P>Hi, I'm a front-end web developer intern passionate about creating modern, user-friendly websites. I
+                    enjoy learning new technologies and improving my design-to-code skills.</P>
+                <div class="contact-button">
+                    <div class="button-c">Contact me</div>
+                </div>
+            </div>
+
+        </div>
+        <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+  type="module"
+></script>
+
+<dotlottie-wc
+  src="https://lottie.host/2d6055eb-2a0e-4010-9d88-c0518cc137e9/82yKKxTAkx.lottie"
+  style="width: 300px;height: 300px"
+  autoplay
+  loop
+></dotlottie-wc>
+
+        <!-- <div class="hero-img">
+            <img src="hello.jpg" alt="" style="width: 480px;">
+        </div> -->
+    </div>
+    <section class="stripe about" ID="ABOUT">
+        <div class="heading-about">
+            <h2>ABOUT <span style="color: #00ADB5; "">ME </span> </h2>
+        </div>
+        <div class="about-c">
+          
+            <div class="para-about">
+                <img src="Group 62.png" alt="">
+                <div class="para">
+                <p>
+
+                    Hey there! I'm currently working as a frontend development intern, diving into the world of web
+                    design and development. I enjoy building responsive and clean user interfaces using HTML, CSS, and
+                    JavaScript. Lately, I’ve been learning React to bring more interactivity and structure to the
+                    projects I work on.
+                </p>
+
+                <p>
+                    I’m focused on improving my skills in component-based development, working with APIs, and making
+                    sure websites look good and perform well across all devices. I'm always curious to try out new tools
+                    and techniques, and I enjoy solving real-world problems through code while learning from every
+                    project I take on.
+                </p>
+                </div>
+            </div>
+
+        </div>
+
+            
+  <!-- SKILLS SECTION -->
+  <section class="skills stripe" id="skills">
+    <h2>MY <SPAN style="color: #00ADB5;" >SKILLS</SPAN></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa fa-code"></i>
+        <h3>HTML / CSS</h3>
+        <p>Building responsive, accessible, and semantic web interfaces.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-laptop"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive UI design with dynamic DOM manipulation.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-wordpress"></i>
+        <h3>WordPress</h3>
+        <p>Designing custom layouts using Elementor and modern plugins.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-react"></i>
+        <h3>React (Learning)</h3>
+        <p>Creating component-based UI structures and reusable logic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta" id="CONTACT">
+    <h2>Interested in <span style="color:#00ADB5;">Working Together?</span></h2>
+    <p>Let’s connect! I’m always open to discussing projects or new opportunities in web development.</p>
+    <a href="#contactForm" class="btn-light">Get in Touch</a>
+  </section>
+
+  <!-- Hidden Contact Form -->
+  <div id="contactForm" class="overlay">
+    <div class="popup">
+      <a href="#CONTACT" class="close-btn">&times;</a>
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container stripe">
+      <p>© 2025 Muhammad Tayyab Khan — Front-End Developer</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+   
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+</body>
+
+</html>
